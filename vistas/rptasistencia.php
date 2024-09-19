@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
     
 }
 require 'header.php';
-require 'header.php';
+
 require "../config/conexion.php";
 date_default_timezone_set(ZONA_HORARIA);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
