@@ -40,13 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 
-
-
-
-
-
-
- 
 <!--CONTENIDO -->
 <div class="content-wrapper">
 
