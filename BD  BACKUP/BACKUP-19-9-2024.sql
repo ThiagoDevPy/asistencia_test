@@ -18,12 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `control_asistencia`
+-- Base de datos: `control_asistencia` 
 --
 
---- CREAR LA BASE DE DATOS CON NOMBRE control_asistencia y con cotejamiento utf8mb4_general_ci con phpmyadmin en "Nueva"
-
--- --------------------------------------------------------
+-----------------------------------------------------------
 
 
 --

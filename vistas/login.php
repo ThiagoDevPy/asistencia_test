@@ -21,7 +21,7 @@
 <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="#"><b>C</b> - Códigos</a>
+      <a href="#"><img src="../public/dist/img/Logos-uninorte-05-1.png" width="115" height="47" alt="" /></a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">

@@ -35,8 +35,7 @@ switch ($_GET["op"]) {
 
         //si se ha ingresado una nueva contraseña
         if (!empty($password)) {
-            //generamos eñ hash SHA256 PARA la contraseña
-            
+            //generamos eñ hash SHA256 PARA la contraseña   
             $clavehash = password_hash($password, PASSWORD_DEFAULT);
         }
 
