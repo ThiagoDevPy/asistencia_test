@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start(); // Iniciar la sesión
 
 // Verificar si el usuario está autenticado
@@ -19,10 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $clave = $_POST['clave'];
     
     // Verificar el token CSRF
-    if (!hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
-        die("Token CSRF no válido.");
-    }
-
+ 
     // Manejo de la imagen
     if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] === UPLOAD_ERR_OK) {
         $allowed_types = ['image/jpeg', 'image/png'];
@@ -71,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
           <div class="panel-body" id="formularioregistros">
             <form action="" name="formulario" id="formulario" method="POST" enctype="multipart/form-data">
-              <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+              
               <div class="form-group col-lg-6 col-md-6 col-xs-12">
                 <label for="">Nombre(*): </label>
                 <input class="form-control" type="hidden" name="idusuario" id="idusuario">
@@ -113,3 +111,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <?php require 'footer.php'; ?>
 <script src="scripts/usuario.js"></script>
+
+
+<?php
+ob_end_flush();
+?>

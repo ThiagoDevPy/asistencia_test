@@ -5,7 +5,7 @@ require "../config/conexion.php";
 
 class Asistencia
 {
-
+   
 
 
     public function __construct()

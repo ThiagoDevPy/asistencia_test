@@ -1,2 +1,4 @@
 <?php 
-header('location: vistas/escritorio.php');
+
+
+header('location: vistas/login.php');
