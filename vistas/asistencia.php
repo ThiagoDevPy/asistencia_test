@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start(); // Iniciar la sesión
 
 // Verificar si el usuario está autenticado
@@ -69,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <table id="tbllistado" class="table table-striped table-bordered table-condensed table-hover">
               <thead>
                 <th>Id de Asistencia</th>
-                <th>Id del Empleado</th>
+                <th>Id del Alumno</th>
                 <th>Nombre</th>
                 <th>Fecha</th>
                 <th>Hora</th>
@@ -80,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </tbody>
               <tfoot>
               <th>Id de Asistencia</th>
-                <th>Id del Empleado</th>
+                <th>Id del Alumno</th>
                 <th>Nombre</th>
                 <th>Fecha</th>
                 <th>Hora</th>
@@ -121,3 +122,8 @@ require 'footer.php';
  ?>
 
 <script src="scripts/asistencia.js"></script>
+
+
+<?php
+ob_end_flush();
+?>

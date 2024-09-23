@@ -62,7 +62,7 @@ switch ($_GET["op"]) {
                 "2" => $reg->apellidos,
                 "3" => $reg->documento_numero,
                 "4" => $reg->telefono,
-                "5" => $reg->codigo
+                "5" => $reg->carrera
             );
         }
 

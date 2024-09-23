@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start(); // Iniciar la sesión
 
 // Verificar si el usuario está autenticado
@@ -54,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
           <!--box-header-->
           <div class="box-header with-border">
-            <h1 class="box-title">Listas de empleados <button class="btn btn-success" onclick="mostrarform(true)" id="btnAgregar"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
+            <h1 class="box-title">Listas de Alumnos <button class="btn btn-success" onclick="mostrarform(true)" id="btnAgregar"><i class="fa fa-plus-circle"></i> Agregar</button></h1>
             <div class="box-tools pull-right">
               
             </div>
@@ -73,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <th>Apellidos</th>
                 <th>Documento</th>
                 <th>Telefono</th>
-                <th>Codigo</th>
+                <th>Carrera</th>
                 
               </thead>
               <tbody>
@@ -84,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <th>Apellidos</th>
                 <th>Documento</th>
                 <th>Telefono</th>
-                <th>Codigo</th>
+                <th>Carrera</th>
               </tfoot>   
             </table>
 
@@ -150,3 +151,6 @@ require 'footer.php';
 
 <script src="scripts/empleado.js"></script>
 
+<?php 
+ob_end_flush();
+?>

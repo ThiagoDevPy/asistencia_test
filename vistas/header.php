@@ -101,18 +101,19 @@
             <ul class="treeview-menu">
               <li><a href="asistencia.php"><i class="fa fa-circle-o"></i> Asistencias</a></li>
               <li><a href="rptasistencia.php"><i class="fa fa-circle-o"></i> Reportes</a></li>
+              <li><a href="regasistencia.php"><i class="fa fa-circle-o"></i> Registrar Asistencias</a></li>
             </ul>
           </li>
 
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-users"></i> <span>Empleados</span>
+              <i class="fa fa-users"></i> <span>Alumnos</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="empleado.php"><i class="fa fa-circle-o"></i> Empleados</a></li>
+              <li><a href="empleado.php"><i class="fa fa-circle-o"></i> Lista de Alumnos</a></li>
              
             </ul>
           </li>

@@ -1,4 +1,7 @@
 <?php
+
+ob_start();
+
 session_start(); // Iniciar la sesión
 
 // Verificar si el usuario está autenticado
@@ -143,3 +146,7 @@ require 'footer.php';
 
 <script src="scripts/rptasistencia.js"></script>
 
+
+<?php
+ob_end_flush();
+?>

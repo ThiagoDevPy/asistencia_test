@@ -1,4 +1,7 @@
 <?php
+
+ob_start();
+
 session_start(); // Iniciar la sesión
 
 // Verificar si el usuario está autenticado
@@ -88,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                 <div class="inner">
                                     <h4 class="font-size: 20px;">
-                                        <strong>Empleados</strong>
+                                        <strong>Alumnos</strong>
                                     </h4>
                                     <p>Total <?php echo $reg->nombre; ?></p>
                                 </div>
@@ -169,3 +172,7 @@ require 'footer.php';
 ?>
 
 <script src="scripts/asistencia.js"></script>
+
+<?php
+ob_end_flush();
+?>

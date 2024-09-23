@@ -3,7 +3,7 @@
 require "global.php";
 
     //hacemos conexion con la base de datos
-    $conexion = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $conexion = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, PORT);
 
     //establece el conjunto de caracteress para la conexion
     mysqli_query($conexion, 'SET NAMES "' .DB_ENCODE. '"');
