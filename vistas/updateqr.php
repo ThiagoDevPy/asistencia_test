@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
         $stmt->bind_param("s", $new_id);
         $stmt->execute();
 
-        $new_qr_code_data = "https://qrcode.zeabur.app/guardardatos.php?id=" . $new_id;
+        $new_qr_code_data = "https://asistencia.zeabur.app/guardardatos.php?id=" . $new_id;
         QRcode::png($new_qr_code_data, 'qrcodes/new_qr.png', QR_ECLEVEL_L, 10);
 
         echo json_encode(['new_qr' => "qrcodes/new_qr.png", 'new_id' => $new_id]);

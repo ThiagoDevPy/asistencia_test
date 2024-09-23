@@ -102,7 +102,7 @@ QRcode::png($new_qr_code_data, 'qrcodes/new_qr.png', QR_ECLEVEL_L, 10);
                                 }
 
                                 // Actualiza el QR cada 2 minutos (120000 ms)
-                                setInterval(updateQRCode, 10000);
+                                setInterval(updateQRCode, 120000);
                             </script>
 
 
