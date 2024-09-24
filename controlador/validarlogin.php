@@ -23,7 +23,7 @@ if ($usuario && $contrasena) {
         if (password_verify($contrasena, $row['password'])) {
             // Contraseña correcta
             $_SESSION['user_id'] = $row['id'];
-            session_regenerate_id(true); // Regenerar ID de sesión
+            
             $response = ['success' => true, 'message' => 'Inicio de sesión exitoso.'];
         }
     }
