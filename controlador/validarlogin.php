@@ -4,7 +4,7 @@ session_start(); // Iniciar la sesión
 require "../config/conexion.php"; // Asegúrate de que este archivo esté correctamente configurado
 
 // Obtener y sanitizar datos POST
-$usuario = filter_var(trim($_POST['usuario']), FILTER_SANITIZE_STRING);
+$usuario = filter_var(trim($_POST['usuario']));
 $contrasena = trim($_POST['contrasena']);
 
 // Preparar respuesta
