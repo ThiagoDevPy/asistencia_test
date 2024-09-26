@@ -3,7 +3,7 @@
 define("DB_HOST", "autorack.proxy.rlwy.net");
 
 //nombre de la base de datos
-define("DB_NAME", "zeabur");
+define("DB_NAME", "railway");
 
 //usuario de la base de datos
 define("DB_USERNAME", "root");
