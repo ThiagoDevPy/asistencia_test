@@ -50,6 +50,11 @@ class Empleado
         $sql = "SELECT * FROM empleados";
         return ejecutarConsulta($sql);
    }
+   public function cantidad_empleado()
+   {
+       $sql = "SELECT count(*) empleado_id FROM empleados";
+       return ejecutarConsulta($sql);
+   }
   
 
 }

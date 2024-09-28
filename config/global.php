@@ -1,6 +1,6 @@
 <?php
 //IP del servidor de la base de datos
-define("DB_HOST", "autorack.proxy.rlwy.net");
+define("DB_HOST", "fra1.clusters.zeabur.com");
 
 //nombre de la base de datos
 define("DB_NAME", "zeabur");
@@ -10,7 +10,7 @@ define("DB_USERNAME", "root");
 
 
 // contrasena de la base de datos
-define("DB_PASSWORD", "cVExNQageAUHrpYLkVoOdvSmUaauNMxN");
+define("DB_PASSWORD", "12vF0CcQwG6ef9ZLHP5TEd3DzxY8V47J");
 
 //codificacion de caracteres
 define("DB_ENCODE", "utf8");
@@ -21,6 +21,6 @@ define("PRO_NOMBRE", "CompartiendoCodigo");
 //Zona horaria
 define("ZONA_HORARIA", "America/Asuncion");
 
-define("PORT", "32972");
+define("PORT", "32285");
 
 ?>
